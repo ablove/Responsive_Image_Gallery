@@ -1,0 +1,18 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+.gallery .gallery-image {
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery .gallery-image:hover {
+  transform: scale(1.05);
+}

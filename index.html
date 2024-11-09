@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Gallery</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-4">Responsive Image Gallery</h1>
+      <div class="row gallery">
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/IMG_20241016_110603 - Copy.jpg"
+            alt="Image 1"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/IMG_20241016_110603.jpg"
+            alt="Image 2"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_10_2024-11-06_12-39-54.jpg"
+            alt="Image 3"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_1_2024-11-06_12-39-54 - Copy.jpg"
+            alt="Image 4"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_1_2024-11-06_12-39-54.jpg"
+            alt="Image 5"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_1_2024-11-06_12-40-53 - Copy.jpg"
+            alt="Image 6"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_1_2024-11-06_12-40-53.jpg"
+            alt="Image 7"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_3_2024-11-06_12-40-53.jpg"
+            alt="Image 8"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_2024-11-05_22-53-24.jpg"
+            alt="Image 9"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_2024-11-06_12-36-38.jpg"
+            alt="Image 10"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_2_2024-11-06_12-39-54.jpg"
+            alt="Image 11"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_2_2024-11-06_12-40-53.jpg"
+            alt="Image 12"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_3_2024-11-06_12-39-54 - Copy.jpg"
+            alt="Image 13"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <img
+            src="images/photo_3_2024-11-06_12-39-54 - Copy.jpg"
+            alt="Image 14"
+            class="img-fluid gallery-image"
+            data-toggle="modal"
+            data-target="#lightboxModal"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div
+      class="modal fade"
+      id="lightboxModal"
+      tabindex="-1"
+      aria-labelledby="lightboxModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img
+              id="lightbox-image"
+              src=""
+              alt="Large Image"
+              class="img-fluid"
+            />
+          </div>
+          <button
+            type="button"
+            class="close position-absolute"
+            style="top: 10px; right: 15px; color: white"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
